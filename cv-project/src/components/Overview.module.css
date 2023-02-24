@@ -1,0 +1,20 @@
+li {
+  list-style-type: none;
+}
+
+.personalInfo {
+  display: flex;
+}
+
+.educationInfo {
+}
+
+.workHistory {
+}
+
+.workHistoryHead,
+.educationHead,
+.personalInfoHead {
+  font-size: 1.5rem;
+  text-align: left;
+}
