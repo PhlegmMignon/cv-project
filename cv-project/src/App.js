@@ -20,7 +20,8 @@ class App extends Component {
       description: { text: "", id: uniqid() },
       startDate: { text: "", id: uniqid() },
       endDate: { text: "", id: uniqid() },
-      showing: true,
+      // showing: true,
+      // overviewShowing: false,
 
       personalInfoArray: [],
       educationArray: [],
@@ -38,6 +39,14 @@ class App extends Component {
         this.state.major,
         this.state.graduation,
       ],
+      workHistoryArray: [
+        this.state.company,
+        this.state.position,
+        this.state.description,
+        this.state.startDate,
+        this.state.endDate,
+      ],
+
       name: { text: "", id: uniqid() },
       email: { text: "", id: uniqid() },
       number: { text: "", id: uniqid() },
@@ -50,7 +59,8 @@ class App extends Component {
       startDate: { text: "", id: uniqid() },
       endDate: { text: "", id: uniqid() },
 
-      showing: false,
+      // showing: false,
+      // overviewShowing: true,
     });
   };
   handleChange = (e) => {
@@ -149,7 +159,8 @@ class App extends Component {
       description,
       startDate,
       endDate,
-      showing,
+      // showing,
+      // overviewShowing,
 
       personalInfoArray,
       educationArray,
@@ -160,7 +171,7 @@ class App extends Component {
       <div className={styles.App} id={"app"}>
         <div className={styles.cvGen}>Cv Generator</div>
         <form
-          style={{ display: showing ? "flex" : "none" }}
+          // style={{ display: showing ? "flex" : "none" }}
           onSubmit={this.onSubmitTask}
         >
           <div className={styles.personalInfoHead}>Personal Info</div>
